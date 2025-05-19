@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Bites - Filipino Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Savory Bites</h1>
+                <p>Authentic Filipino Cuisine</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#reservation" class="nav-link">Reservations</a></li>
+                    <li><a href="#order" class="nav-link">Order Online</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="page-section active-section">
+            <div class="hero">
+                <div class="hero-content">
+                    <h2>Experience the Taste of the Philippines</h2>
+                    <p>Authentic flavors, warm hospitality, and unforgettable dining experiences</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn">View Menu</a>
+                        <a href="#reservation" class="btn btn-outline">Book a Table</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="highlights">
+                    <h2>Our Specialties</h2>
+                    <div class="highlight-items">
+                        <div class="highlight-item">
+                           <img  src="H1.jpg"  alt="Chicken Adobo" width="300" height="200"style="object-fit: cover;">
+                            <h3>Chicken Adobo</h3>
+                            <p>Our signature dish - tender chicken braised in soy sauce, vinegar, and garlic</p>
+                        </div>
+                        <div class="highlight-item">
+                             <img  src="H2.jpg"  alt="Sinigang" width="300" height="200"style="object-fit: cover;">
+                            <h3>Sinigang</h3>
+                            <p>Traditional tamarind soup with your choice of meat and fresh vegetables</p>
+                        </div>
+                        <div class="highlight-item">
+                           <img  src="H3.jpg"  alt="Lechon Kawali" width="300" height="200"style="object-fit: cover;">
+                            <h3>Lechon Kawali</h3>
+                            <p>Crispy fried pork belly served with our special liver sauce</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <h2>Visit Us</h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>123 Main Street, Balilihan, Bohol</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <p>(038) 555-1234</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>info@savorybites.com</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <p>Open Daily: 10AM - 10PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="page-section">
+            <div class="container">
+                <h2>Our Menu</h2>
+                <div class="menu-filters">
+                    <button class="filter-btn active" data-category="all">All Items</button>
+                    <button class="filter-btn" data-category="appetizers">Appetizers</button>
+                    <button class="filter-btn" data-category="mains">Main Courses</button>
+                    <button class="filter-btn" data-category="desserts">Desserts</button>
+                    <button class="filter-btn" data-category="drinks">Drinks</button>
+                </div>
+
+                <div class="menu-items">
+                    <!-- Appetizers -->
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-info">
+                              <img  src="A1.png"  alt="Lumpia Shanghai"  style="width:300px; height:200px; object-fit:cover; object-position:center; display:block;">
+                            <h3>Lumpia Shanghai</h3>
+                            <p>Crispy spring rolls filled with ground pork and vegetables</p>
+                            <span class="price">₱150</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-info">
+                              <img  src="A2.jpg"  alt="Chicharon Bulaklak"  style="width:300px; height:200px; object-fit:cover; object-position:center; display:block;">
+                            <h3>Chicharon Bulaklak</h3>
+                            <p>Crispy pork ruffle served with vinegar dip</p>
+                            <span class="price">₱180</span>
+                        </div>
+                    </div>
+
+                    <!-- Main Courses -->
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-info">
+                              <img  src="M1.jpg"  alt="Kare-Kare"  style="width:300px; height:200px; object-fit:cover; object-position:center; display:block;">
+                            <h3>Kare-Kare</h3>
+                            <p>Oxtail and vegetables in rich peanut sauce with bagoong</p>
+                            <span class="price">₱320</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-info">
+                              <img  src="M2.jpg"  alt="Crispy Pata"  style="width:300px; height:200px; object-fit:cover; object-position:center; display:block;">
+                            <h3>Crispy Pata</h3>
+                            <p>Deep-fried pork knuckle served with soy-vinegar dip</p>
+                            <span class="price">₱450</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-info">
+                              <img  src="M3.jpg"  alt="Beef Kaldereta"  style="width:300px; height:200px; object-fit:cover; object-position:center; display:block;">
+                            <h3>Beef Kaldereta</h3>
+                            <p>Tender beef stew in tomato sauce with potatoes and bell peppers</p>
+                            <span class="price">₱350</span>
+                        </div>
+                    </div>
+
+                    <!-- Desserts -->
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-info">
+                              <img  src="D1.jpg"  alt="Halo-Halo"  style="width:300px; height:200px; object-fit:cover; object-position:center; display:block;">
+                            <h3>Halo-Halo</h3>
+                            <p>Mixed sweet ingredients with shaved ice and evaporated milk</p>
+                            <span class="price">₱120</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-info">
+                              <img  src="D2.jpg"  alt="Leche Flan"  style="width:300px; height:200px; object-fit:cover; object-position:center; display:block;">
+                            <h3>Leche Flan</h3>
+                            <p>Creamy caramel custard</p>
+                            <span class="price">₱100</span>
+                        </div>
+                    </div>
+
+                    <!-- Drinks -->
+                    <div class="menu-item" data-category="drinks">
+                        <div class="item-info">
+                              <img  src="D3.jpg"  alt="Fresh Buko Juice"  style="width:300px; height:200px; object-fit:cover; object-position:center; display:block;">
+                            <h3>Fresh Buko Juice</h3>
+                            <p>Fresh young coconut water</p>
+                            <span class="price">₱80</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="drinks">
+                        <div class="item-info">
+                              <img  src="D4.jpg"  alt="Mango Shake" style="width:300px; height:200px; object-fit:cover; object-position:center; display:block;">
+                            <h3>Mango Shake</h3>
+                            <p>Fresh mango blended with milk and ice</p>
+                            <span class="price">₱120</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="page-section">
+            <div class="container">
+                <h2>Our Story</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Founded in 2010, Savory Bites brings authentic Filipino flavors to Bohol. Our founder, Chef Maria Reyes, wanted to share the traditional recipes passed down through generations of her family.</p>
+                        <p>We source our ingredients locally whenever possible, supporting Boholano farmers and fishermen. Our meats come from trusted suppliers who practice ethical farming.</p>
+                        <p>At Savory Bites, we believe in "Lutong Bahay" (home-cooked) quality - food prepared with care, served with warmth, and enjoyed with family.</p>
+                    </div>
+                    <div class="about-image">
+                        <img  src="R1.jpg"  alt="Restaurant">
+                    </div>
+                </div>
+
+                <div class="team-section">
+                    <h3>Meet Our Team</h3>
+                    <div class="team-members">
+                        <div class="team-member">
+                            <img src="P1.jpg" alt="Chef Maria">
+                            <h4>Chef Alli Ragas</h4>
+                            <p>Head Chef & Owner</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="P2.jpg" alt="Chef Juan">
+                            <h4>Alli Ragas</h4>
+                            <p>Sous Chef</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="P3.jpg" alt="Manager Ana">
+                            <h4>Alli Ragas</h4>
+                            <p>Restaurant Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>123 Main Street, Balilihan, Bohol</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <p>(038) 555-1234</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>info@savorybites.com</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <p>Open Daily: 10AM - 10PM</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone (optional)</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                        <div id="formMessage" class="form-message"></div>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123456.78901234567!2d123.456789!3d9.876543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTInMzUuNiJOIDEyM8KwMjcnMjQuNCJF!5e0!3m2!1sen!2sph!4v1234567890123!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservation Section -->
+        <section id="reservation" class="page-section">
+            <div class="container">
+                <h2>Make a Reservation</h2>
+                <div class="reservation-container">
+                    <div class="reservation-info">
+                        <h3>Dining Hours</h3>
+                        <p><strong>Monday - Friday:</strong> 11:00 AM - 9:00 PM</p>
+                        <p><strong>Saturday - Sunday:</strong> 10:00 AM - 10:00 PM</p>
+                        <p>For parties of 8 or more, please call us directly at (038) 555-1234</p>
+                        <div class="reservation-note">
+                            <p><strong>Note:</strong> Your reservation will be confirmed by our staff via phone or email within 24 hours.</p>
+                        </div>
+                    </div>
+
+                    <div class="reservation-form">
+                        <form id="reservationForm">
+                            <div class="form-group">
+                                <label for="reserve-name">Full Name</label>
+                                <input type="text" id="reserve-name" name="reserve-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reserve-email">Email</label>
+                                <input type="email" id="reserve-email" name="reserve-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reserve-phone">Phone Number</label>
+                                <input type="tel" id="reserve-phone" name="reserve-phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reserve-date">Date</label>
+                                <input type="date" id="reserve-date" name="reserve-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reserve-time">Time</label>
+                                <input type="time" id="reserve-time" name="reserve-time" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reserve-guests">Number of Guests</label>
+                                <select id="reserve-guests" name="reserve-guests" required>
+                                    <option value="">Select...</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5 People</option>
+                                    <option value="6">6 People</option>
+                                    <option value="7">7 People</option>
+                                    <option value="8">8 People</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="reserve-notes">Special Requests (optional)</label>
+                                <textarea id="reserve-notes" name="reserve-notes" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn">Book Table</button>
+                        </form>
+                        <div id="reservationMessage" class="form-message"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Online Section -->
+        <section id="order" class="page-section">
+            <div class="container">
+                <h2>Order Online</h2>
+                <div class="order-container">
+                    <div class="order-menu">
+                        <h3>Menu</h3>
+                        <div class="order-categories">
+                            <button class="order-category-btn active" data-category="all">All Items</button>
+                            <button class="order-category-btn" data-category="appetizers">Appetizers</button>
+                            <button class="order-category-btn" data-category="mains">Mains</button>
+                            <button class="order-category-btn" data-category="desserts">Desserts</button>
+                            <button class="order-category-btn" data-category="drinks">Drinks</button>
+                        </div>
+
+                        <div class="order-items">
+                            <!-- Appetizers -->
+                            <div class="order-item" data-category="appetizers">
+                                <div class="item-details">
+                                    <h4>Lumpia Shanghai (6 pcs)</h4>
+                                    <p>Crispy spring rolls filled with ground pork and vegetables</p>
+                                    <span class="item-price">₱150</span>
+                                </div>
+                                <button class="add-to-cart" data-name="Lumpia Shanghai (6 pcs)" data-price="150">Add to Order</button>
+                            </div>
+                            <div class="order-item" data-category="appetizers">
+                                <div class="item-details">
+                                    <h4>Chicharon Bulaklak</h4>
+                                    <p>Crispy pork ruffle served with vinegar dip</p>
+                                    <span class="item-price">₱180</span>
+                                </div>
+                                <button class="add-to-cart" data-name="Chicharon Bulaklak" data-price="180">Add to Order</button>
+                            </div>
+
+                            <!-- Main Courses -->
+                            <div class="order-item" data-category="mains">
+                                <div class="item-details">
+                                    <h4>Kare-Kare</h4>
+                                    <p>Oxtail and vegetables in rich peanut sauce with bagoong</p>
+                                    <span class="item-price">₱320</span>
+                                </div>
+                                <button class="add-to-cart" data-name="Kare-Kare" data-price="320">Add to Order</button>
+                            </div>
+                            <div class="order-item" data-category="mains">
+                                <div class="item-details">
+                                    <h4>Crispy Pata</h4>
+                                    <p>Deep-fried pork knuckle served with soy-vinegar dip</p>
+                                    <span class="item-price">₱450</span>
+                                </div>
+                                <button class="add-to-cart" data-name="Crispy Pata" data-price="450">Add to Order</button>
+                            </div>
+
+                            <!-- Desserts -->
+                            <div class="order-item" data-category="desserts">
+                                <div class="item-details">
+                                    <h4>Halo-Halo</h4>
+                                    <p>Mixed sweet ingredients with shaved ice and evaporated milk</p>
+                                    <span class="item-price">₱120</span>
+                                </div>
+                                <button class="add-to-cart" data-name="Halo-Halo" data-price="120">Add to Order</button>
+                            </div>
+
+                            <!-- Drinks -->
+                            <div class="order-item" data-category="drinks">
+                                <div class="item-details">
+                                    <h4>Mango Shake</h4>
+                                    <p>Fresh mango blended with milk and ice</p>
+                                    <span class="item-price">₱120</span>
+                                </div>
+                                <button class="add-to-cart" data-name="Mango Shake" data-price="120">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-cart">
+                        <h3>Your Order</h3>
+                        <div class="cart-items">
+                            <p class="empty-cart">Your cart is empty</p>
+                            <!-- Cart items will be added here dynamically -->
+                        </div>
+                        <div class="cart-total">
+                            <p>Subtotal: <span id="cart-subtotal">₱0</span></p>
+                        </div>
+
+                        <div class="delivery-options">
+                            <h4>Delivery Options</h4>
+                            <div class="delivery-radio">
+                                <label>
+                                    <input type="radio" name="delivery" value="pickup" checked>
+                                    Pickup
+                                </label>
+                                <label>
+                                    <input type="radio" name="delivery" value="delivery">
+                                    Delivery (+₱50 fee)
+                                </label>
+                            </div>
+                        </div>
+
+                        <button id="checkout-btn" class="btn" disabled>Proceed to Checkout</button>
+                    </div>
+                </div>
+
+                <!-- Checkout Modal -->
+                <div id="checkout-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <h3>Complete Your Order</h3>
+                        <form id="checkoutForm">
+                            <div class="form-group">
+                                <label for="checkout-name">Full Name</label>
+                                <input type="text" id="checkout-name" name="checkout-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkout-phone">Phone Number</label>
+                                <input type="tel" id="checkout-phone" name="checkout-phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkout-email">Email (optional)</label>
+                                <input type="email" id="checkout-email" name="checkout-email">
+                            </div>
+                            <div class="form-group">
+                                <label for="checkout-address">Delivery Address (if delivery)</label>
+                                <textarea id="checkout-address" name="checkout-address" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkout-notes">Special Instructions</label>
+                                <textarea id="checkout-notes" name="checkout-notes" rows="3"></textarea>
+                            </div>
+                            <div class="order-summary">
+                                <h4>Order Summary</h4>
+                                <div id="checkout-items">
+                                    <!-- Order items will be added here -->
+                                </div>
+                                <div class="order-total">
+                                    <p>Subtotal: <span id="checkout-subtotal">₱0</span></p>
+                                    <p>Delivery Fee: <span id="delivery-fee">₱0</span></p>
+                                    <p class="total">Total: <span id="checkout-total">₱0</span></p>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn">Place Order</button>
+                        </form>
+                        <div id="checkout-message" class="form-message"></div>
+                    </div>
+                </div>
+
+                <!-- Order Confirmation Modal -->
+                <div id="confirmation-modal" class="modal">
+                    <div class="modal-content">
+                        <div class="confirmation-content">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Order Received!</h3>
+                            <p>Thank you for your order. A restaurant representative will contact you shortly to confirm your order and arrange payment.</p>
+                            <p>Your order reference: <strong id="order-reference">SB-12345</strong></p>
+                            <button id="close-confirmation" class="btn">Back to Menu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Order Confirmation Modal -->
+<div id="confirmation-modal" class="modal">
+    <div class="confirmation-content">
+        <i class="fas fa-check-circle"></i>
+        <h3>Order Received!</h3>
+        <p>Thank you for your order. Your food is being prepared and will be ready soon.</p>
+        <p>Your order reference: <strong id="order-reference">SB-12345</strong></p>
+        <button id="close-confirmation" class="btn">Back to Menu</button>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Savory Bites</h3>
+                    <p>Authentic Filipino Cuisine in the heart of Bohol</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#reservation">Reservations</a></li>
+                        <li><a href="#order">Order Online</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Balilihan, Bohol</p>
+                    <p><i class="fas fa-phone"></i> (038) 555-1234</p>
+                    <p><i class="fas fa-envelope"></i> info@savorybites.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Friday: 11AM - 9PM</p>
+                    <p>Saturday - Sunday: 10AM - 10PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Savory Bites. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
